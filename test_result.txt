@@ -1,0 +1,58 @@
+   FAIL  Tests\Unit\PrintServiceTest
+  ⨯ numbers list
+
+  ---
+
+  • Tests\Unit\PrintServiceTest > numbers list
+  Failed asserting that two arrays are equal.
+
+  at tests/Unit/PrintServiceTest.php:42
+     38▕         $expected = $this->expectedResult();
+     39▕         $service = new PrintService;
+     40▕         $result = $service->getResult();
+     41▕
+  ➜  42▕         $this->assertEquals($expected, $result);
+     43▕     }
+     44▕ }
+     45▕
+  --- Expected
+  +++ Actual
+  @@ @@
+       17 => 'Fizz'
+       18 => 19
+       19 => 20
+  -    20 => 'Buzz'
+  +    20 => 'FizzBuzz'
+       21 => 22
+       22 => 23
+       23 => 'Fizz'
+  @@ @@
+       38 => 'Fizz'
+       39 => 40
+       40 => 41
+  -    41 => 'Buzz'
+  +    41 => 'FizzBuzz'
+       42 => 43
+       43 => 44
+       44 => 'Fizz'
+  @@ @@
+       59 => 'Fizz'
+       60 => 61
+       61 => 62
+  -    62 => 'Buzz'
+  +    62 => 'FizzBuzz'
+       63 => 64
+       64 => 65
+       65 => 'Fizz'
+  @@ @@
+       80 => 'Fizz'
+       81 => 82
+       82 => 83
+  -    83 => 'Buzz'
+  +    83 => 'FizzBuzz'
+       84 => 85
+       85 => 86
+       86 => 'Fizz'
+
+  Tests:  1 failed
+  Time:   0.02s
