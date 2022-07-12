@@ -24,7 +24,7 @@ class PrintService
      *
      * @return array
      */
-    private function getResult(): array
+    public function getResult(): array
     {
         $result = [];
 
